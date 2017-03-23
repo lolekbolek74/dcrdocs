@@ -19,7 +19,7 @@ Es gibt vier verschiedene Möglichkeiten die Decred Software herunterzuladen und
 
 2. Mache dcrinstall-darwin-xxxx-vx.x.x ausführbar über die Befehlszeile:
 
-    Wechsle in das Verzeichnis in dem sich die dcrinstall Datei befindet indem du mit dem `cd` Kommando dorthin wechselst, führe chmod mit den Parametern u+x aus um die dcrinstall Datei ausführbar zu machen und starte die ausführbare Datei anschließend. Nachfolgend ein Beispiel für die Kommandos (passe die Verzeichnis- und Dateinamen entsprechend an):
+    Wechsel in das Verzeichnis in dem sich die dcrinstall Datei befindet indem du mit dem `cd` Kommando dorthin wechselst, führe chmod mit den Parametern u+x aus um die dcrinstall Datei ausführbar zu machen und starte die ausführbare Datei anschließend. Nachfolgend ein Beispiel für die Kommandos (passe die Verzeichnis- und Dateinamen entsprechend an):
     
     `cd ~/Downloads/` <br />
     `chmod u+x dcrinstall-darwin-amd64-v0.8.2` <br />
@@ -36,13 +36,13 @@ Es gibt vier verschiedene Möglichkeiten die Decred Software herunterzuladen und
     Für 32-bit ARM Computer, lade `dcrinstall-linux-arm-v0.8.2` herunter. <br />
     Für 64-bit ARM Computer, lade `dcrinstall-linux-arm64-v0.8.2` herunter.
 
-2. Mache dcrinstall-linux-amd64-v0.8.2 ausführbar über die Befehlszeile:
+2. Mache dcrinstall-linux-xxxxx-vx.x.x ausführbar über die Befehlszeile:
 
-    Navigate to the directory where the dcrinstall file was downloaded using the `cd` command, run chmod with u+x mode on the dcrinstall file, and run the executable that is created. Below is an example of the commands (change directories or filename as needed):
+    Wechsel in das Verzeichnis in dem sich die dcrinstall Datei befindet indem du mit dem `cd` Kommando dorthin wechselst, führe chmod mit den Parametern u+x aus um die dcrinstall Datei ausführbar zu machen und starte die ausführbare Datei anschließend. Nachfolgend ein Beispiel für die Kommandos (passe die Verzeichnis- und Dateinamen entsprechend an):
     
     `cd ~/Downloads/` <br />
-    `chmod u+x dcrinstall-darwin-amd64-v0.8.2` <br />
-    `./dcrinstall-darwin-amd64-v0.8.2` 
+    `chmod u+x dcrinstall-linux-amd64-v0.8.2` <br />
+    `./dcrinstall-linux-amd64-v0.8.2` 
     
 3. The binaries for `dcrd`, `dcrwallet`, and `dcrctl` can then be found in the `~/decred/` directory.
 
