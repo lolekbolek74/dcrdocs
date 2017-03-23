@@ -1,10 +1,10 @@
-# Installation Guide
+# Installationsanleitung
 
-This guide was last updated for v0.8.2.
+Diese Anleitung wurde zuletzt zur v0.8.2 überarbeitet
 
 ---
 
-There are four methods for downloading and installing the Decred software. One is via dcrinstall (cross-platform), one is via the Windows Installer (Windows only of course, and the only way to get Paymetheus as of v0.8.2), another is via the precompiled binary releases (cross-platform), and the other is building the software yourself (cross-platform). The first three methods will be covered here and the fourth may be added at a later date.
+Es gibt vier verschiedene Möglichkeiten die Decred Software herunterzuladen und zu installieren. Die erste Variante wäre der Download von dcrinstall (cross-plattform), eine weitere Möglichkeit ist der Windows Installer (Nur für Windows und zur Zeit die einzige Möglichkeit Paymetheus v0.8.2 zu installieren), eine weitere Möglichkeit ist der Download der vorkompilierten Binärdateien (plattformübergreifend) und zu guter letzt die Software im Quelltext herunterzuladen und selbst zu kompilieren (cross-plattform). Die ersten drei Methoden werden nachfolgend beschrieben, eine Anleitung zur Kompilierung folgt zu einem späteren Zeitpunkt.
 
 ---
 
@@ -27,35 +27,35 @@ The Windows Installer (`.msi` file) is located here: [https://github.com/decred/
 
 ## **dcrinstall**
 
-`dcrinstall` is an automatic installer and upgrader for the Decred software. The newest release can be found here: [https://github.com/decred/decred-release/releases](https://github.com/decred/decred-release/releases). Binaries are provided for Windows, OSX/macOS, Linux, OpenBSD, and FreeBSD. Executing installer will install `dcrd`, `dcrwallet`, and `dcrctl`. Instructions are provided for Mac, Linux, and Windows below (assumed proficiency for *BSD users).
+`dcrinstall` steht zur automatischen Installation und zum Update der Decred Software bereit. Die aktuellste Version kann hier heruntergeladen werden: [https://github.com/decred/decred-release/releases](https://github.com/decred/decred-release/releases). Binärdateien werden für Windows, OSX/macOS, Linux, OpenBSD und FreeBSD angeboten. Wenn die Installation durchgeführt wird werden `dcrd`, `dcrwallet`, und `dcrctl` auf dem Zielsystem installiert. Anleitungen für die Installation auf dem Mac, Linux und Windows werden nachfolgend beschrieben (Wir gehen davon au dass *BSD Nutzer selbstständig klar kommen).
 
 > OSX/macOS:
 
-1. Download the correct file:
+1. Lade die für dein Betriebssystem korrekte Datei herunter:
 
-    For 32-bit computers, download the `dcrinstall-darwin-386-v0.8.2` file. <br />
-    For 64-bit computers, download the `dcrinstall-darwin-amd64-v0.8.2` file.
+    Für 32-bit Computer, lade `dcrinstall-darwin-386-v0.8.2` herunter. <br />
+    Für 64-bit Computer, lade `dcrinstall-darwin-amd64-v0.8.2` herunter.
 
-2. Make dcrinstall-darwin-xxxx-vx.x.x an executable within your terminal:
+2. Mache dcrinstall-darwin-xxxx-vx.x.x ausführbar über die Befehlszeile:
 
-    Navigate to the directory where the dcrinstall file was downloaded using the `cd` command, run chmod with u+x mode on the dcrinstall file, and run the executable that is created. Below is an example of the commands (change directories or filename as needed):
+    Wechsle in das Verzeichnis in dem sich die dcrinstall Datei befindet indem du mit dem `cd` Kommando dorthin wechselst, führe chmod mit den Parametern u+x aus um die dcrinstall Datei ausführbar zu machen und starte die ausführbare Datei anschließend. Nachfolgend ein Beispiel für die Kommandos (passe die Verzeichnis- und Dateinamen entsprechend an):
     
     `cd ~/Downloads/` <br />
     `chmod u+x dcrinstall-darwin-amd64-v0.8.2` <br />
     `./dcrinstall-darwin-amd64-v0.8.2`
     
-3. The binaries for `dcrd`, `dcrwallet`, and `dcrctl` can then be found in the `~/decred/` directory.
+3. Die Binärdateien für `dcrd`, `dcrwallet`, und `dcrctl` können nach der Installation im Verzeichnis `~/decred/` gefunden werden.
 
 > Linux:
 
-1. Download the correct file:
+1. Lade die für dein Betriebssystem korrekte Datei herunter:
 
-    For 32-bit computers, download the `dcrinstall-linux-386-v0.8.2` file. <br />
-    For 64-bit computers, download the `dcrinstall-linux-amd64-v0.8.2` file. <br />
-    For 32-bit ARM computers, download the `dcrinstall-linux-arm-v0.8.2` file. <br />
-    For 64-bit ARM computers, download the `dcrinstall-linux-arm64-v0.8.2` file.
+    Für 32-bit Computer, lade `dcrinstall-linux-386-v0.8.2` herunter. <br />
+    Für 64-bit Computer, lade `dcrinstall-linux-amd64-v0.8.2` herunter. <br />
+    Für 32-bit ARM Computer, lade `dcrinstall-linux-arm-v0.8.2` herunter. <br />
+    Für 64-bit ARM Computer, lade `dcrinstall-linux-arm64-v0.8.2` herunter.
 
-2. Make dcrinstall-darwin-xxxx-vx.x.x an executable within your terminal:
+2. Mache dcrinstall-linux-amd64-v0.8.2 ausführbar über die Befehlszeile:
 
     Navigate to the directory where the dcrinstall file was downloaded using the `cd` command, run chmod with u+x mode on the dcrinstall file, and run the executable that is created. Below is an example of the commands (change directories or filename as needed):
     
