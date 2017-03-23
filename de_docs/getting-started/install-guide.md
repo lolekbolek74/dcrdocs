@@ -63,73 +63,72 @@ The Windows Installer (`.msi` file) is located here: [https://github.com/decred/
     `chmod u+x dcrinstall-linux-amd64-v0.8.2` <br />
     `./dcrinstall-linux-amd64-v0.8.2` 
     
-3. The binaries for `dcrd`, `dcrwallet`, and `dcrctl` can then be found in the `~/decred/` directory.
+3. Die Binärdateien für `dcrd`, `dcrwallet`, und `dcrctl` können nach der Installation im Verzeichnis `~/decred/` gefunden werden.
 
 > Windows:
 
-1. Download the correct file:
+1. Lade die für dein Betriebssystem korrekte Datei herunter:
 
-    For 32-bit computers, download the `dcrinstall-windows-386-v0.8.2.exe` file. <br /> 
-    For 64-bit computers, download the `dcrinstall-windows-amd64-v0.8.2.exe` file. <br />
+    Für 32-bit computers, lade `dcrinstall-windows-386-v0.8.2.exe` herunter. <br /> 
+    Für 64-bit computers, lade `dcrinstall-windows-amd64-v0.8.2.exe` herunter. <br />
 
-2.  Run the dcrinstall executable file.
+2.  Starte die ausführbare dcrinstall Datei.
 
-    You can either double click it or run it from the Command Prompt. 
+    Du kannst die Datei entweder per Doppelklick starten oder über die Eingabeaufforderung starten. 
     
-3. The binaries for `dcrd`, `dcrwallet`, and `dcrctl` can then be found in the `%HOMEPATH%\decred\` directory (usually %HOMEPATH% is `C:\Users\username`).
+3. Die Binärdateien für `dcrd`, `dcrwallet`, und `dcrctl` können nach der Installation im Verzeichnis `%HOMEPATH%\decred\` gefunden werden (in der Regel ist %HOMEPATH% das Verzeichnis `C:\Users\username`).
 
 ---
 
 ## **Binary Releases**
 
-The newest Binary Releases can be found here: [https://github.com/decred/decred-binaries/releases](https://github.com/decred/decred-binaries/releases). With the exception of the `.msi` and `.dmg` files, they are archives of the latest executable binaries for each release. Although most of this will be unzip and go, instructions are provided for Mac, Linux, and Windows below (assumed proficiency for *BSD users).
+Die neuesten vorkompilierten Binärdateien können hier gefunden werden: [https://github.com/decred/decred-binaries/releases](https://github.com/decred/decred-binaries/releases). Mit Ausnahme der `.msi` und `.dmg` Dateien, diese sind selbstenpackende Archive der aktuellsten Binärdateien für jeden Release. Obwohl der grösste Teil lediglich ein Entpacken mit zip ist werden nachfolgend die Anleitungen für Mac, Linux und Windows beschrieben (Wir gehen davon au dass *BSD Nutzer selbstständig klar kommen).
 
 > OSX/macOS
 
-1. Download the correct file:
+1. Lade die für dein Betriebssystem korrekte Datei herunter:
 
-    For 32-bit computers, download the `decred-darwin-386-v0.8.2.tar.gz` file. <br />
-    For 64-bit computers, download the `decred-darwin-amd64-v0.8.2.tar.gz` file.
+    Für 32-bit Computer, lade `decred-darwin-386-v0.8.2.tar.gz` herunter. <br />
+    Für 64-bit Computer, lade `decred-darwin-amd64-v0.8.2.tar.gz` herunter.
 
-2. Navigate to download location and extract the .tar.gz file:
+2. Wechsel in das Verzeichnis in dem sich die heruntergeladene Datei befindet und entpacke die .tar.gz Datei:
 
-    Finder: simply double click on the .tar.gz file. <br />
-    Terminal: use the `tar -xvzf filename.tar.gz` command. 
+    Finder: einfach ein Doppelklick auf die .tar.gz Datei. <br />
+    Terminal: benutze folgendes Kommando `tar -xvzf filename.tar.gz`.
 
-    **NOTE**: If you are using Safari on macOS Sierra and have the 'Open "safe" files after downloading' preference enabled, .gz and .zip files are automatically uncompressed after download. The `tar -xvzf filename.tar.gz` command results in this error: `tar: Error opening archive: Failed to open 'filename.tar.gz'`. Use `tar -xvzf filename.tar` instead (remove the .gz from the previous command).
+    **HINWEIS**: Falls du Safari unter macOS Sierra benutzt und die 'Open "safe" files after downloading' Einstellung aktiviert hast werden .gz und .zip Dateien automatisch entpackt nachdem der Download abgeschlossen ist. Das Kommando `tar -xvzf filename.tar.gz` resultiert in nachfolgender Fehlerausgabe: `tar: Error opening archive: Failed to open 'filename.tar.gz'`. Benutze stattdessen das Kommando `tar -xvzf filename.tar` (entferne das .gz vom vorherigen Kommando).
     
-    Both of these should extract the tar into a folder that shares the same name. (`e.g. tar -xvzf decred-darwin-amd64-v0.8.2.tar.gz` should extract to `decred-darwin-amd64-v0.8.2`). It should include `dcrctl`, `dcrd`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, and `sample-dcrwallet.conf`.
+    Nachdem das Archiv erfolgreich entpackt wurde sollten nun Verzeichnisse mit selbigen Namen vorliegen. (`z.B. tar -xvzf decred-darwin-amd64-v0.8.2.tar.gz` sollte in das Verzeichnis `decred-darwin-amd64-v0.8.2` entpackt werden). Folgende Binärdateien sollten nun in dem Verzeichnis liegen `dcrctl`, `dcrd`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, und `sample-dcrwallet.conf`.
 
 
 > Linux
 
-1. Download the correct file:
+1. Lade die für dein Betriebssystem korrekte Datei herunter:
 
-    For 32-bit computers, download the `decred-linux-386-v0.8.2.tar.gz` file. <br />
-    For 64-bit computers, download the `decred-darwin-amd64-v0.8.2.tar.gz` file. <br />
-    For 32-bit ARM computers, download the `decred-linux-arm-v0.8.2.tar.gz` file. <br />
-    For 64-bit ARM computers, download the `decred-linux-arm64-v0.8.2.tar.gz` file.
+    Für 32-bit Computer, lade `decred-linux-386-v0.8.2.tar.gz` herunter. <br />
+    Für 64-bit Computer, lade `decred-darwin-amd64-v0.8.2.tar.gz` herunter. <br />
+    Für 32-bit ARM Computer, lade `decred-linux-arm-v0.8.2.tar.gz` herunter. <br />
+    Für 64-bit ARM Computer, lade `decred-linux-arm64-v0.8.2.tar.gz` herunter.
 
-2. Navigate to download location and extract the .tar.gz file:
+2. Wechsel in das Verzeichnis in dem sich die heruntergeladene Datei befinden und entpacke die .tar.gz Datei:
 
-    Finder: simply double click on the .tar.gz file. <br />
-    Terminal: use the `tar -xvzf filename.tar.gz` command. 
+    Finder: einfach ein Doppelklick auf die .tar.gz Datei. <br />
+    Terminal: benutze folgendes Kommando `tar -xvzf filename.tar.gz`. 
     
-    Both of these should extract the tar.gz into a folder that shares the same name. (`e.g. tar -xvzf decred-darwin-amd64-v0.8.2.tar.gz` should extract to `decred-darwin-amd64-v0.8.2`). It should include `dcrctl`, `dcrd`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, and `sample-dcrwallet.conf`.
+    Nachdem das Archiv erfolgreich entpackt wurde sollten nun Verzeichnisse mit selbigen Namen vorliegen. (`z.B. tar -xvzf decred-darwin-amd64-v0.8.2.tar.gz` sollte in das Verzeichnis `decred-darwin-amd64-v0.8.2` entpackt werden). Folgende Binärdateien sollten nun in dem Verzeichnis liegen `dcrctl`, `dcrd`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, und `sample-dcrwallet.conf`.
 
 > Windows
 
-Note: Windows 7/8/10 natively provides support for `.zip` files, therefore it is preferable to use the `.zip` file so that third-party applications aren't required for the `.tar.gz` file. Instructions are provided for the `.zip` file.
+Hinweis: Windows 7/8/10 unterstützen von Haus aus das entpacken von `.zip` Dateien, daher sollten die Dateien mit der Endung `.zip` als Download bevorzugt werden, da das Entpacken der `.tar.gz` ein Programm zur entpacken voraussetzt. Die nachfolgende Anleitung bezieht sich auf das Entpacken der `.zip` Dateien.
 
-1. Download the correct file:
+1. Lade die für dein Betriebssystem korrekte Datei herunter:
 
-    For 32-bit computers, download the `decred-windows-386-v0.8.2.zip` file. <br />
-    For 64-bit computers, download the `decred-windows-amd64-v0.8.2.zip` file.
+    Für 32-bit Computer, lade `decred-windows-386-v0.8.2.zip` herunter. <br />
+    Für 64-bit Computer, lade `decred-windows-amd64-v0.8.2.zip` herunter.
 
-2. Navigate to download location and unzip the `.zip` file:
+2. Wechsel in das Verzeichnis in dem sich die heruntergeladene Datei befinden und entpacke die `.zip` Datei:
 
-    File Explorer: Right click on the .zip file, select "Extract All.." and a prompt should open asking for the directory to use. The default will extract the `.zip` to a folder with the same name. It should include `dcrctl`, `dcrd`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, and `sample-dcrwallet.conf`.
+    File Explorer: Rechte Maustaste auf die .zip Datei, "Alles entpacken.." auswählen und eine Fenster zum Auswählen des Ziels des Entpackvorgangs sollte erscheinen. Die Voreinstellung wird die `.zip` Datei in ein Verzeichnis mit selbigen Namen entpacken. In dem Verzeichnis sollten sich nun folgende Dateien befinden `dcrctl`, `dcrd`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, und `sample-dcrwallet.conf`.
 
-If you decide to download the `.tar.gz` file, it will require two separate extractions in some third-party application (7-zip, winRAR, etc..) to get to the actual binaries.
+Wenn du dich dazu entschieden hast die `.tar.gz` herunterzuladen, wirst du das Archiv zwei mal entpacken müssen. Hierzu wird eine extra Software benötigt, da Windows von Haus aus keine `.tar.gz` Dateien unterstützt (7-zip, winRAR, etc..).
 
------------------------
