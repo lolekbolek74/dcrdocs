@@ -4,24 +4,24 @@ Diese Anleitung wurde zuletzt zur v0.8.2 überarbeitet
 
 ---
 
-Es gibt vier verschiedene Möglichkeiten die Decred Software herunterzuladen und zu installieren. Die erste Variante wäre der Download von dcrinstall (cross-plattform), eine weitere Möglichkeit ist der Windows Installer (Nur für Windows und zur Zeit die einzige Möglichkeit Paymetheus v0.8.2 zu installieren), eine weitere Möglichkeit ist der Download der vorkompilierten Binärdateien (plattformübergreifend) und zu guter letzt die Software im Quelltext herunterzuladen und selbst zu kompilieren (cross-plattform). Die ersten drei Methoden werden nachfolgend beschrieben, eine Anleitung zur Kompilierung folgt zu einem späteren Zeitpunkt.
+Es gibt vier verschiedene Möglichkeiten die Decred Software herunterzuladen und zu installieren. Die erste Variante wäre der Download von dcrinstall (plattformübergreifend), eine weitere Möglichkeit ist der Windows Installer (Nur für Windows und zur Zeit die einzige Möglichkeit Paymetheus v0.8.2 zu installieren), eine weitere Möglichkeit ist der Download der vorkompilierten Binärdateien (plattformübergreifend) und zu guter letzt die Software im Quelltext herunterzuladen und selbst zu kompilieren (plattformübergreifend). Die ersten drei Methoden werden nachfolgend beschrieben, eine Anleitung zur Kompilierung folgt zu einem späteren Zeitpunkt.
 
 ---
 
 ## **Paymetheus** 
 
-The Windows Installer (`.msi` file) is located here: [https://github.com/decred/decred-binaries/releases](https://github.com/decred/decred-binaries/releases). It will install Paymetheus to your computer's Program Files folder. Installation is pretty straightforward, but instructions are provided below:
+Die Installationssoftware für Windows (`.msi` Datei) kann hier heruntergeladen werden: [https://github.com/decred/decred-binaries/releases](https://github.com/decred/decred-binaries/releases). Paymetheus wird auf deinem Computer im Programme Ordner installiert. Die Installation ist unkompliziert, nachfolgend eine kurze Anleitung:
 
-1. Download the correct file:
+1. Lade die für dein Betriebssystem korrekte Datei herunter:
 
-    For 32-bit computers, download the `decred_0.8.2-beta_x86.msi` file. <br />
-    For 64-bit computers, download the `decred_0.8.2-beta_x64.msi` file.
+    Für 32-bit Computer, lade `decred_0.8.2-beta_x86.msi` herunter. <br />
+    Für 64-bit Computer, lade `decred_0.8.2-beta_x64.msi` herunter.
 
-2. Navigate to download location and double click the `.msi` file.
+2. Navigiere in das Verzeichnis deines Downloads und starte die `.msi` Datei mit einen Doppelklick.
 
-3. Follow the installation steps. Within this process you'll be prompted to accept an End-User License Agreement.
+3. Der Installationsassistent wird dich durch den Installationsprozess führen. Während der Installation wirst du aufgefordert die Nutzungs- und Lizenzbedingungen zu akzeptieren.
 
-4. After setup, the features should be installed to your `..\Program Files\Decred\` folder and accessible through the Start Menu (look for `Decred` in the Program list)
+4. Nach der Installation sollte die Software im `..\Program Files\Decred\` Verzeichniss installiert sein. Es wird eine Verknüpfung im Startmenü hinterlegt (schaue nach der `Decred` Verknüpfung in deiner Programmliste)
 
 ---
 
@@ -131,4 +131,3 @@ Hinweis: Windows 7/8/10 unterstützen von Haus aus das entpacken von `.zip` Date
     File Explorer: Rechte Maustaste auf die .zip Datei, "Alles entpacken.." auswählen und eine Fenster zum Auswählen des Ziels des Entpackvorgangs sollte erscheinen. Die Voreinstellung wird die `.zip` Datei in ein Verzeichnis mit selbigen Namen entpacken. In dem Verzeichnis sollten sich nun folgende Dateien befinden `dcrctl`, `dcrd`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, und `sample-dcrwallet.conf`.
 
 Wenn du dich dazu entschieden hast die `.tar.gz` herunterzuladen, wirst du das Archiv zwei mal entpacken müssen. Hierzu wird eine extra Software benötigt, da Windows von Haus aus keine `.tar.gz` Dateien unterstützt (7-zip, winRAR, etc..).
-
