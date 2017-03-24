@@ -132,25 +132,6 @@ Hinweis: Windows 7/8/10 unterstützen von Haus aus das entpacken von `.zip` Date
 
 Wenn du dich dazu entschieden hast die `.tar.gz` herunterzuladen, wirst du das Archiv zwei mal entpacken müssen. Hierzu wird eine extra Software benötigt, da Windows von Haus aus keine `.tar.gz` Dateien unterstützt (7-zip, winRAR, etc..).
 
-## **Windows Installer** 
 
-Der Windows Installer (`.msi` Datei) kann hier gefunden werden: [https://github.com/decred/decred-binaries/releases](https://github.com/decred/decred-binaries/releases). Dieser Installer wird das GUI Wallet Paymetheus im Programme Verzeichnis installieren. Die Installation ist selbsterklärend, nachfolgend eine kurze Anleitung hierzu:
-
-1. Lade die für dein Betriebssystem korrekte Datei herunter:
-
-    Für 32-bit Computer, lade `decred_0.8.2-beta_x86.msi` herunter. <br />
-    Für 64-bit Computer, lade `decred_0.8.2-beta_x64.msi` herunter.
-
-2. Wechsel in das Verzeichnis in dem sich die heruntergeladene Datei befinden und starte die `.msi` Datei mit einen Doppelklick.
-
-3. Führe den Installationsprozess durch. Während der Installation wirst du dazu aufgefordert die Nutzungs- und Lizenzbedingungen zu akzeptieren.
-
-4. Nachdem die Installation durchgeführt wurde findest du die Installation im `..\Program Files\Decred\` Verzeichnis und Paymetheus kann über das Start Menü gestartet werden (Klick auf das `Decred` Symbol in der Programmliste)
 
 -----------------------
-
-Paymetheus Nutzer können nun die nachfolgende Anleitung lesen [Paymetheus setup](/getting-started/user-guides/paymetheus.md)
-
-Nutzer, die mit der Eingabeaufforderung arbeiten möchten lesen die Anleitung für [Windows](/getting-started/user-guides/windows.md),
-[OSX](/getting-started/user-guides/osx.md) oder [Linux](/getting-started/user-guides/linux.md)
-
