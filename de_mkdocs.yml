@@ -22,8 +22,8 @@ pages:
   - "Beginner's Guide": 'getting-started/beginner-guide.md'
   - 'Herunterladen und installieren': 'getting-started/install-guide.md'
   - Paymetheus:
-    - 'Paymetheus Setup': 'getting-started/user-guides/paymetheus.md'
-    - 'Using Paymetheus': 'getting-started/user-guides/using-paymetheus.md'
+    - 'Paymetheus Einrichten': 'getting-started/user-guides/paymetheus.md'
+    - 'Paymetheus benutzen': 'getting-started/user-guides/using-paymetheus.md'
   - Command-Line:
     - 'OS Differences': 'getting-started/cli-differences.md'
     - 'Startup Basics': 'getting-started/startup-basics.md'

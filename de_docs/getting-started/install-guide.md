@@ -120,7 +120,6 @@ Die neuesten vorkompilierten Binärdateien können hier gefunden werden: [https:
 > Windows
 
 Hinweis: Windows 7/8/10 unterstützen von Haus aus das entpacken von `.zip` Dateien, daher sollten die Dateien mit der Endung `.zip` als Download bevorzugt werden, da das Entpacken der `.tar.gz` ein Programm zur entpacken voraussetzt. Die nachfolgende Anleitung bezieht sich auf das Entpacken der `.zip` Dateien.
-<<<<<<< HEAD
 
 1. Lade die für dein Betriebssystem korrekte Datei herunter:
 
