@@ -3,6 +3,7 @@ theme: null
 theme_dir: tpldcrdocs/
 site_url: https://docs.decred.org
 repo_url: https://github.com/decred/dcrdocs
+docs_dir: de_docs/
 markdown_extensions:
   - footnotes
   - fontawesome_markdown
