@@ -6,6 +6,25 @@ Diese Anleitung wurde zuletzt zur v0.8.2 überarbeitet
 
 Es gibt vier verschiedene Möglichkeiten die Decred Software herunterzuladen und zu installieren. Die erste Variante wäre der Download von dcrinstall (cross-plattform), eine weitere Möglichkeit ist der Windows Installer (Nur für Windows und zur Zeit die einzige Möglichkeit Paymetheus v0.8.2 zu installieren), eine weitere Möglichkeit ist der Download der vorkompilierten Binärdateien (plattformübergreifend) und zu guter letzt die Software im Quelltext herunterzuladen und selbst zu kompilieren (cross-plattform). Die ersten drei Methoden werden nachfolgend beschrieben, eine Anleitung zur Kompilierung folgt zu einem späteren Zeitpunkt.
 
+---
+
+## **Paymetheus** 
+
+The Windows Installer (`.msi` file) is located here: [https://github.com/decred/decred-binaries/releases](https://github.com/decred/decred-binaries/releases). It will install Paymetheus to your computer's Program Files folder. Installation is pretty straightforward, but instructions are provided below:
+
+1. Download the correct file:
+
+    For 32-bit computers, download the `decred_0.8.2-beta_x86.msi` file. <br />
+    For 64-bit computers, download the `decred_0.8.2-beta_x64.msi` file.
+
+2. Navigate to download location and double click the `.msi` file.
+
+3. Follow the installation steps. Within this process you'll be prompted to accept an End-User License Agreement.
+
+4. After setup, the features should be installed to your `..\Program Files\Decred\` folder and accessible through the Start Menu (look for `Decred` in the Program list)
+
+---
+
 ## **dcrinstall**
 
 `dcrinstall` steht zur automatischen Installation und zum Update der Decred Software bereit. Die aktuellste Version kann hier heruntergeladen werden: [https://github.com/decred/decred-release/releases](https://github.com/decred/decred-release/releases). Binärdateien werden für Windows, OSX/macOS, Linux, OpenBSD und FreeBSD angeboten. Wenn die Installation durchgeführt wird werden `dcrd`, `dcrwallet`, und `dcrctl` auf dem Zielsystem installiert. Anleitungen für die Installation auf dem Mac, Linux und Windows werden nachfolgend beschrieben (Wir gehen davon au dass *BSD Nutzer selbstständig klar kommen).
@@ -59,6 +78,8 @@ Es gibt vier verschiedene Möglichkeiten die Decred Software herunterzuladen und
     
 3. Die Binärdateien für `dcrd`, `dcrwallet`, und `dcrctl` können nach der Installation im Verzeichnis `%HOMEPATH%\decred\` gefunden werden (in der Regel ist %HOMEPATH% das Verzeichnis `C:\Users\username`).
 
+---
+
 ## **Binary Releases**
 
 Die neuesten vorkompilierten Binärdateien können hier gefunden werden: [https://github.com/decred/decred-binaries/releases](https://github.com/decred/decred-binaries/releases). Mit Ausnahme der `.msi` und `.dmg` Dateien, diese sind selbstenpackende Archive der aktuellsten Binärdateien für jeden Release. Obwohl der grösste Teil lediglich ein Entpacken mit zip ist werden nachfolgend die Anleitungen für Mac, Linux und Windows beschrieben (Wir gehen davon au dass *BSD Nutzer selbstständig klar kommen).
@@ -111,6 +132,7 @@ Hinweis: Windows 7/8/10 unterstützen von Haus aus das entpacken von `.zip` Date
 
 Wenn du dich dazu entschieden hast die `.tar.gz` herunterzuladen, wirst du das Archiv zwei mal entpacken müssen. Hierzu wird eine extra Software benötigt, da Windows von Haus aus keine `.tar.gz` Dateien unterstützt (7-zip, winRAR, etc..).
 
+<<<<<<< HEAD
 ## **Windows Installer** 
 
 Der Windows Installer (`.msi` Datei) kann hier gefunden werden: [https://github.com/decred/decred-binaries/releases](https://github.com/decred/decred-binaries/releases). Dieser Installer wird das GUI Wallet Paymetheus im Programme Verzeichnis installieren. Die Installation ist selbsterklärend, nachfolgend eine kurze Anleitung hierzu:
@@ -132,3 +154,6 @@ Paymetheus Nutzer können nun die nachfolgende Anleitung lesen [Paymetheus setup
 
 Nutzer, die mit der Eingabeaufforderung arbeiten möchten lesen die Anleitung für [Windows](/getting-started/user-guides/windows.md),
 [OSX](/getting-started/user-guides/osx.md) oder [Linux](/getting-started/user-guides/linux.md)
+=======
+-----------------------
+>>>>>>> upstream/master
