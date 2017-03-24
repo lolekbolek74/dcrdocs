@@ -1,67 +1,67 @@
-# **Paymetheus Setup Guide** #
+# **Paymetheus Installationsanleitung** #
 
-Paymetheus is a simple to use graphical wallet for Decred. With it, you can send and receive DCR, 
-purchase tickets for [PoS voting](/mining/proof-of-stake.md), get a history of all your transactions and more.
-About the only thing Paymetheus doesn't do is PoS voting.
-
----
-
-## **Download and Install** ##
-Download and installation instructions are available [here](/getting-started/install-guide.md#windows-installer)
+Paymetheus ist ein Decred Wallet mit grafischer Oberfläche. Sie können damit DCR senden und empfangen, Tickets zur Teilnahme am [PoS voting](/mining/proof-of-stake.md) kaufen und eine Transaktionshistorie all Ihrer getätigten Transaktionen einsehen.
+Paymatheus übernimmt allerdings nicht das Voting, daher sind Sie darauf angewiesen sich bei einen Stakepool zu registrieren um am PoS Voting teilzunehmen.
 
 ---
 
-## **Start Paymetheus** ##
-You're now ready to start using Decred! Start the 'Decred' program. You will now see the connection screen:  
+## **Download und Installation** ##
+Die Downloadlinks und eine Installationsanleitung finden Sie [hier](/getting-started/install-guide.md#windows-installer)
+
+---
+
+## **Paymetheus Starten** ##
+Jetzt können Sie mit der Nutzung von Decred beginnen! Starten Sie das 'Decred' Programm. Als erstes sehen Sie den Verbindungsbildschirm:  
 
 ![Paymetheus connection screen](../../img/Paymetheus-dcrd-login.png)  
 
->Two programs are actually running when you start Decred. There's 'Paymetheus' which is the graphical wallet we'll talk further about
->and 'dcrd' which is the communications daemon (pronounced DAY-mon; a program that runs in the background and that does not directly interact
-> with a user) that actually talks to the Decred network. This means that you can run dcrd
->on another computer (such as an always on server) and then use Paymetheus to connect to it remotely.
+>Zwei Programme werden ausgeführt wenn Sie Decred starten. 'Paymetheus', das grafische Wallet und 'dcrd', der Daemon (DAY-mon ausgesprochen; Ein Programm
+>das im Hintergrund läuft und mit dem der Nutzer nicht direkt interagiert), der die Verbindung zum Decred Netzwerk aufbaut. Das bedeutet, Sie könnten 'dcrd'
+>auf einen weiteren Computer laufen lassen (zum Beispiel ein Server der immer angeschaltet ist) und Paymetheus konfigurieren um eine Verbindung zum 'dcrd' Daemon auf einen anderen Rechner aufzubauen.
 
-We're going to use a local one that Paymetheus has already started so just press Continue.
+Wir werden eine Verbindung zum lokalen 'dcrd' Daemon aufbauen der bereits durch Paymetheus im Hintergrund gestartet wurde und klicken daher auf Continue.
 
-> The first time Paymetheus starts, it will download the blockchain in the background. This can take up to an hour.
+> Das erste mal wenn Paymetheus gestartet wird muss die Blockchain im Hintergrund heruntergeladen werden. Dies kann abhängig von Ihrer Internetverbindung bis zu einer Stunde dauern.
 
 ---
 
-## **Create or Restore Wallet** ##
-You will now have the option to create a new wallet or restore a wallet from a seed. If you're reading this, you're probably new and don't 
-already have a wallet so let's create a new one. If you click restore, you will be asked to enter your seed words instead of being given a new seed.
-The rest of the process is the same. Click "Create a new wallet". You will see the following screen:  
+## **Wallet neu Erstellen oder mit einen Seed wiederherstellen** ##
+Sie haben nun die Wahl ein neues Wallet zu erstellen oder mit einen bereits vorhandenen Seed wiederherzustellen. Wenn Sie diese Anleitung lesen werden Sie 
+Wahrscheinlich ein neues Wallet erstellen wollen. Klicken Sie auf 'restore' werden Sie anschließend dazu aufgefordert Ihren Seed einzugeben. Erstellen Sie ein
+ganz neues Wallet wird Ihnen Ihr neu erstellter Seed auf dem Bildschirm angezeigt. Die nachfolgenden Schritte sind in beiden Varianten die selben.
+Klicken Sie auf "Create a new wallet". Sie werden folgenden Bildschirm sehen:  
 
 ![Paymetheus wallet creation screen](/img/Paymetheus-seed-window.png)  
 
-<i class="fa fa-exclamation-triangle"></i> **STOP HERE!!! DO NOT CLICK CONTINUE!**  
+<i class="fa fa-exclamation-triangle"></i> **STOP!!! HIER NICHT WEITERMACHEN!**  
 
-This is the most important part of using Decred. In the white box you key (or seed) words are displayed. These words are the key to your wallet.  
+Hier kommt der wichtigste Teil bei der Erstellung eines neuen Wallets. In dem weissen Feld wird Ihr neuer Seed angezeigt. Diese Worte sind Ihr Schlüssel zu 
+Ihrem Wallet.  
 
-<i class="fa fa-exclamation-triangle"></i> **WITHOUT THESE WORDS OR THE HEX REPRESENTATION YOU WILL PERMANANTLY AND FOREVER LOSE ACCESS TO YOUR FUNDS!**  
+<i class="fa fa-exclamation-triangle"></i> **OHNE DIESEN SEED ODER DEN DAZUGEHÖRIGEN HEX-CODE VERLIEREN SIE UNWIEDERBRINGLICH DEN ZUGRIFF AUF IHR WALLET!**  
 
-**DO NOT GIVE THEM TO ANYONE ELSE, NOT EVEN DECRED DEVELOPERS!** With these words, someone else can recreate your wallet on another computer and transfer
-all of funds out to another wallet. It is not possible to reverse a transaction in Decred, so if someone steals your Decred, there is no way to get it back.  
+**GEBEN SIE DEN SEED NIEMALS JEMAND ANDEREN, NICHT EINMAL DEN DECRED ENTWICKLERN!** Mit diesen Worten kann jemand Ihr Wallet auf einen anderen Computer 
+wiederherstellen und Ihre Geld transferieren oder stehlen. Bei Decred lassen sich keine Transaktionen rückgängig machen, sobald jemand Ihre Decreds stiehlt 
+haben Sie keine Möglichkeit dieses Geld zurückzuholen.
 
-Decred and other digital currencies are often described as being like a bank account. This is true, but your wallet is like an actual, physical wallet.
-If you lose your wallet, you lose access to whatever you had in it and no one, not even the Decred developers can get it back. So it's very important
-that you take the time to read this page and WRITE DOWN the key words in a safe place. A good idea is to write them on a piece of paper and store them
-somewhere secure and also store them in an ENCRYPTED file on your computer. Cloud storage like Dropbox or OneDrive is fine, but remember that other people
-can access them which is why you should encrypt the file (MS Word or Libre/OpenOffice can do this).  
+Decred und andere digitale Währungen werden oft mit einen Bankkonto verglichen. Dies ist nur teilweise wahr, denn ihr Decred Wallet ist auch vergleichbar mit
+Ihrer Geldbörse. Verlieren Sie Ihre Geldbörse verlieren Sie auch den Zugriff auf das, was sich darin befunden hat und niemand, auch nicht die Decred Entwickler
+kann diesen Verlust rückgängig machen. Also ist es sehr wichtig, das Sie sich die Zeit nehmen und diese Seite sehr ausführlich lesen und das Sie Ihren Seed
+AUFSCHREIBEN und diese Notiz anschließend an einen sicheren Ort aufbewahren. Es bietet sich an den Seed auf ein Blatt Papier zu notieren und an einen geheimen 
+Ort aufzubewahren und zusätzlich eine Kopie dieses Seeds VERSCHLÜSSELT auf dem Rechner zu speichern. Clouddienste wie Dropbox oder OneDrive sind nette Dienste
+zum Speichern Ihrer Daten, seien Sie sich aber darüber bewusst, das andere Menschen auf diese Daten Zugriff haben. Daher verschlüsseln Sie bitte diese Daten,
+wenn Sie diese in digitaler Form speichern möchten (MS Word oder Libre/OpenOffice haben Verschlüsselungsfunktionen für Dokumente).
 
-Okay, so you've secured your key words in at least two different places. Click Continue. You are now asked to type them back in to ensure you have written 
-them down correctly in case you need to restore your wallet later. Note you can't paste them; you will need to type them. 
-This is to make sure you have the words saved somewhere other than the clipboard. Do so and click Confirm.
+Okay, Sie haben Ihren Seed nun an mindestens zwei verschiedenen Orten sicher verwahrt. Klicken Sie auf 'Continue'. Nun werden Sie dazu aufgefordert Ihren Seed
+noch einmal einzugeben um sicherzustellen, dass Sie Ihren Seed korrekt notiert haben um Ihr Wallet zu einen späteren Zeitpunkt wiederherstellen zu können.
+Sie können den Seed nicht einfach per 'copy paste' einfügen, Sie müssen diesen eintippen. Dies dient zur Absicherung, dass Sie Ihren Seed nicht einfach in die
+Zwischenablage kopieren und einfügen sondern Ihn auch wirklich notiert haben. Tippen Sie Ihren Seed ein und klicken Sie anschließend auf 'Confirm'.
 
 ---
 
-## **Choose a Private Wallet Passphrase** ##
-Enter a passphrase to use whenever you create a transaction on the network. There is also the option here for a public passphrase. This encrypts your wallet
-data file on your computer. It just prevents someone from viewing your accounts and transactions should they get access to it. As long as the database is locked,
-they cannot access your funds. For most people this step is usually overkill, so you can leave it unticked.
-Once you've entered your new private (and optional public) passphrase, click Encrypt.  
+## **Wählen Sie ein privates Wallet Password** ##
+Dieses Passwort wird benötigt wenn Sie Transaktionen ausführen möchten. Es gibt auch die Möglichkeit wahlweise ein öffentliches Passwort (public Password) zu vergeben. Das öffentliche Passwort verschlüsselt Ihre auf dem Computer gespeicherte Walletdatei. Es soll verhindern, dass jemand an Ihren Computer ohne Ihr Wissen ihr Wallet starten und einsehen kann. Solange Ihr Wallet sich im verschlossenen (locked) Modus befinden können keine Transaktionen durchgeführt werden. Für manche Nutzer ist die Nutzung von zwei Passwörtern zuviel des Guten, daher können Sie entscheiden ob Sie ein öffentliches (public) Passwort vergeben möchten. Haben Sie nun Ihr privates (und optional das öffentliche) Passwort vergeben können Sie auf 'Encrypt' klicken um den Vorgang abzuschließen.
 
-Your wallet will now create and synchronize to the blockchain. This can take a few minutes on slower computers. Note that the key words you wrote down will 
-work with any Decred wallet application, not just Paymetheus.
+Ihr Wallet wird nun auf Ihren Computer erstellt und es wird sich mit der Blockchain synchronisieren. Dies kann einige Minuten dauern. Es ist an dieser Stelle noch zu erwähnen, dass der von Ihnen notierte Seed auch in anderen Decred Anwendungen genutzt werden kann, nicht nur in Paymatheus.
 
-Continue to [Using Paymetheus](using-paymetheus.md)
+Weiterlesen mit [Paymetheus Nutzung](using-paymetheus.md)
