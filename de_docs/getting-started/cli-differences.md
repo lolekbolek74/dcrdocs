@@ -1,25 +1,25 @@
-# **Command-Line Differences Across Operating Systems**
+# **Command-Line Unterschiede bei verschiedenen Betriebssystemen**
 
-This page was last updated for v0.8.2.
-
----
-
-The purpose of this page is to explain the key differences for running the cross-platform command-line applications on Windows, Linux, and macOS/OSX.
+Diese Seite wurde zuletzt für die Version v0.8.2 aktualisiert.
 
 ---
 
-> Launch Commands
+Diese Seite dient dazu Ihnen die Unterschiede bei der plattformübergreifenden Nutzung der Befehlszeile unter Windows, Linux, und macOS/OSX näher zu bringen.
 
-The first major difference in the command line applications (`dcrd`,) is how you launch them from the command line. This is not as much of an operating system as it is a difference in shells. Windows comes with Command Prompt and PowerShell installed. macOS uses Bash within the Terminal application, and many Linux distributions use Bash as well. Below are examples of the basic run commands for Bash and Command Prompt.
+---
 
-**Command Prompt:** `dcrd.exe`, `dcrwallet.exe`, `dcrctl.exe` <br />
+> Start Kommandos
+
+Der erste gravierende Unterschied der Anwendungen für die Befehlszeile (`dcrd`,) besteht darin, wie diese gestartet werden. Dieser Unterschied wird eher durch die unterschiedlichen Befehlszeilen des jeweiligen Betriessystem begründet. Unter Windows können Sie die Eingabeaufforderung oder die vorinstallierte PowerShell nutzen. macOS nutzt Bash innerhalb einer Terminalumgebung und viele Linux Distributionen nutzen Bash ebenfalls. Nachfolgend ein paar Beispiele für Kommandos in Bash und der Eingabeaufforderung.
+
+**Eingabeaufforderung:** `dcrd.exe`, `dcrwallet.exe`, `dcrctl.exe` <br />
 **Bash:** `./dcrd`, `./dcrwallet`, `./dcrctl`
 
-Some of our guides might be OS-agnostic with the launch commands. If a guide says to run `dcrctl --wallet getbalance`, it's referring to using `dcrctl.exe --wallet getbalance` for Command Prompt and `./dcrctl --wallet getbalance` for Bash.
+Manche Anleitungen können OS-spezifische Varianten beinhalten. Wenn in einer Anleitung etwas wie `dcrctl --wallet getbalance` angegeben wird müssen Sie dieses Kommando also möglicherweise leicht verändern wie zum Beispiel `dcrctl.exe --wallet getbalance` für die Eingabeaufforderung und `./dcrctl --wallet getbalance` für Bash.
 
-> Application Directory Locations
+> Anwendungsverzeichnisse
 
-The other way the command line clients differ is the location of each application directory (blocks, wallets, configuration files are all stored within the data directory). Below is a table of the default application directories for each application. 
+Ein weiterer Unterschied in der Nutzung der Kommandozeile liegt in dem jeweiligen Speicherort Ihrer Daten (Blöcke, Wallets, Konfigurationsdateien werden alle innerhalb des 'Data' Verzeichnisses gespeichert). Nachfolgend eine Tabelle mit den Standartverzeichnissen für die Decred Software. 
 
 | OS      | dcrd, dcrwallet, dcrctl App Directories      | 
 | -------:|:--------------------------------------------- |
