@@ -25,7 +25,7 @@ pages:
     - 'Paymetheus Einrichten': 'getting-started/user-guides/paymetheus.md'
     - 'Paymetheus benutzen': 'getting-started/user-guides/using-paymetheus.md'
   - Command-Line:
-    - 'OS Differences': 'getting-started/cli-differences.md'
+    - 'OS Unterschiede': 'getting-started/cli-differences.md'
     - 'Startup Basics': 'getting-started/startup-basics.md'
     - 'dcrd Setup': 'getting-started/user-guides/dcrd-setup.md'
     - 'dcrwallet Setup': 'getting-started/user-guides/dcrwallet-setup.md'
