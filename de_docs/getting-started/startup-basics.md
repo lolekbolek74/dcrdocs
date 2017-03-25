@@ -1,4 +1,4 @@
-# Startup Basics
+# Start Grundlagen
 
 Diese Seite wurde zuletzt für die Version v0.8.2 aktualisiert.
 

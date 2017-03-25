@@ -27,7 +27,7 @@ pages:
   - Command-Line:
     - 'OS Unterschiede': 'getting-started/cli-differences.md'
     - 'Start Grundlagen': 'getting-started/startup-basics.md'
-    - 'dcrd Setup': 'getting-started/user-guides/dcrd-setup.md'
+    - 'dcrd Einrichten': 'getting-started/user-guides/dcrd-setup.md'
     - 'dcrwallet Setup': 'getting-started/user-guides/dcrwallet-setup.md'
     - 'dcrctl Basics': 'getting-started/user-guides/dcrctl-basics.md'
   - 'Web Wallet': 'getting-started/user-guides/web.md'
