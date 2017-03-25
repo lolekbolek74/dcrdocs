@@ -1,18 +1,18 @@
 # Startup Basics
 
-This guide was last updated for v0.8.2
+Diese Seite wurde zuletzt für die Version v0.8.2 aktualisiert.
 
 ---
 
-This guide applies to command-line application users. Paymetheus users can safely ignore the use of config files - Paymetheus handles configuration automatically. It is also worth noting that some of our guides show configuration file settings and other guides show startup command flags. 
+Diese Anleitung ist für Nutzer der Kommandozeile gedacht. Paymetheus Nutzer können das Anpassen der Konfigurationsdateien ignorieren - Paymetheus kümmert sich selbstständig um die Konfiguration. Es ist weiterhin zu erwähnen das einige Anleitungen sich auf die Konfigurationsdateien und andere sich wiederrum auf die Startparameter der Kommandos beziehen. 
 
 ---
 
-## Configuration Files
+## Konfigurationsdateien
 
-All of the Decred software, when started, reads from a configuration file to determine which settings it should enable/disable/set during that initial load. All of the command line startup flags `(e.g. dcrwallet --testnet)` can be replaced by settings within the appropriate configuration file `(e.g. dcrwallet --testnet could be replaced by testnet=1 in dcrwallet.conf)`.
+Die Decred Software liest beim start Konfigurationsdateien ein um zu bestimmen unter welchen Einstellungen es jeweilige Funktionen aktivieren/deaktivieren soll. Alle Startparameter können entweder als Parameter zum Start mitgegeben werden `(z.B. dcrwallet --testnet)` oder wahlweise in der jeweiligen Konfigurationsdatei hinterlegt werden `(z.B. dcrwallet --testnet könnte mit dem Parameter testnet=1 in der Konfigurationsdatei dcrwallet.conf ersetzt werden)`.
 
-These configuration files are located with the application home directory of the application. The location of these default home directories for Windows, macOS/OSX, and Linux are listed below:
+Diese Konfigurationsdateien befinden sich im jeweiligen Anwendungsverzeichnis. Der Ort dieses Anwendungsverzeichnis für Windows, macOS/OSX, und Linux wird nachfolgend aufgelistet:
 
 Windows:
 
@@ -32,26 +32,26 @@ Linux:
     ~/.dcrd/
     ~/.dcrctl/
 
-Each of these folders is allowed it's own `.conf` file, named after the individual application (`e.g. dcrd uses dcrd.conf`). Please also note that the `Dcrd` and `Dcrwallet` home directories are automatically created when each application is first launched. You will have to manually create a `Dcrctl` home directory to utilize a config file.
+Jedes dieser Verzeichnisse enthält die jeweilige `.conf` Datei, benannt nach der jeweiligen Anwendung (`z.B. dcrd nutzt die Konfigurationsdatei dcrd.conf`). Es ist weiterhin anzumerken das `Dcrd` und `Dcrwallet` die jeweiligen Anwendungsverzeichnisse zur Speicherung der Konfigurationsdateien beim ersten Start selbstständig erstellt. Das Anwendungsverzeichnis für `Dcrctl` müssen Sie selbstständig anlegen um eine Konfigurationsdatei zu hinterlegen.
 
-The [dcrinstall](/getting-started/install-guide.md#dcrinstall) and [Binary Release](/getting-started/install-guide.md#binary-releases) installation methods include sample configuration files. It is recommended to copy these config files into the appropriate directory described above, and rename them to remove 'sample-'. These files have many settings commented out (comments are not read by the program during runtime) so all of these settings are effectively disabled. You can enable these pre-written settings by simple deleting the semi-colon before the line.
+Die [dcrinstall](/getting-started/install-guide.md#dcrinstall) und [Binary Release](/getting-started/install-guide.md#binary-releases) Version enthalten bereits Beispielkonfigurationen. Es wird empfohlen diese Beispielkonfigurationen in die oben erwähnten Verzeichnisse zu kopieren und diese Umzubenennen, entfernen Sie dazu das vorangehende 'sample-' im Dateinamen. Diese Konfigurationsdateien haben viele Einstellungen auskommentiert (Kommentare werden durch die Software ignoriert beim Start ignoriert) so das alle Einstellungen zu anfang deaktiviert sind. Sie können diese vorgefertigten Einstellungen aktivieren indem Sie das Semikolon am jeweiligen Zeilenanfang entfernen.
 
 ---
 
-## Startup Command Flags
+## Startparameter
 
-A majority of the settings you are able to set via the configuration file can also be passed to the application as parameters during launch. For example, the following OS-specific commands would open `dcrd` for Testnet use, an alternative to using `testnet=1` in your config file:
+Der Grossteil der Einstellungen kann über die Konfigurationsdateien bestimmt werden oder als Parameter zum Start der Anwendung mitgegeben werden. Nachfolgend ein Beispiel eines Startparameters für das jeweilige Betriebssystem um `dcrd` im Testnet zu starten, als Alternative kann `testnet=1` in der Konfigurationsdatei von `dcrd` hinterlegt werden:
 
     Windows: dcrd.exe --testnet
     macOS: ./dcrd --testnet
     Linux: ./dcrd --testnet
 
-The above example would first look to the `dcrd` configuration file for settings and then look to the executable command to enable the testnet setting. 
+Dieses Beispiel würde zuerst die `dcrd` Konfigurationsdatei mit den jeweiligen Einstellungen einlesen und anschließend diese mit den mitgegebenen Startparametern überschreiben.
 
 ---
 
-## Advanced Usage
+## Fortgeschrittene Nutzung
 
-[Storing Login Details in Config Files](/advanced/storing-login-details.md)
+[Logindaten in den Konfigurationsdateien hinterlegen](/advanced/storing-login-details.md)
 
-[Full List of Options for Each Application](/advanced/program-options.md)
+[Eine komplette Übersicht der Optionen für jede Anwendung](/advanced/program-options.md)
