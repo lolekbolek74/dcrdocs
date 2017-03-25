@@ -52,77 +52,77 @@ Zu diesen Zweck müssen Sie entweder das [solo PoS](/mining/proof-of-stake) einr
 > 1-of-2 multisignature Skript zu erstellen. Das multisignature Skript wird durch den Pool generiert und Ihnen zusammen mit der
 > P2SH Adresse zurückgegeben damit Sie das Recht zum Voting beim Ticketkauf an den Stakepool übergeben können.
 
-Don't worry if you didn't understand that quote. What it means is that you create
-an address that can be accessed by two wallets. Only one wallet needs to be available
-to use the address. This means that the pool can vote on your behalf and you can vote
-using your own wallet if the pool stops working.  
+Zerbrechen Sie sich nicht den Kopf, wenn Sie dieses Zitat nicht direkt verstehen.
+Im Grunde erstellen Sie eine Empfangsadresse auf die von zwei verschiedenen Wallets zugegriffen werden kann.
+Lediglich eines der beiden Wallets muss online sein um auf diese Adresse zuzugreifen. Daraus ergibt sich das
+der Pool für Sie das Voting übernehmen kann und Sie wiederrum das Voting mit Ihren eigenen Wallet übernehmen können
+falls der Pool nicht mehr online sein sollte.
 
-It DOES NOT give the pool access to your funds. All you are doing is granting voting
-rights to the pool. The pool does not touch your funds. 
+Der Pool hat dadurch KEINEN ZUGRIFF auf Ihr Geld. Sie weisen dem Pool lediglich das Recht zu an Ihrer Stelle das Voting durchzuführen. Dabei
+erlangt der Pool hat zu keinen Zeitpunkt Zugriff auf Ihr Geld.
 
-It is recommended that you generate a new account when joining a stake pool. This is
-because accounts are hardened so in the case of a total stake pool
-failure/shutdown, it would be safe to give the private key to another stake pool
-as long as that account only does voting and nothing else.  
+Es wird empfohlen einen neuen Account für das Votingrecht des Stakepools zu erstellen. Im Falle eines Totalausfalls des Stakepools können Sie
+so bedenkenlos das Votingrecht und den dazu benötigten privaten Schlüssel für diesen Account an einen anderen Stakepool weitergeben, solange
+dieser Account lediglich für das Voting genutzt wird und nichts anderes.
 
-Official stake pools are [listed here](/mining/proof-of-stake#sign-up-for-a-stake-pool).
-All stake pools run the same basic code, but may differ in the amount of redundancy available.
-More redundancy equals less chance of missed votes (although all pools will have missed votes
-as many missed votes are caused by PoW miners (sometimes they will find a solution to the blocks
-so quickly that votes haven't had time to propagate around the network). In order to ensure one pool
-does't become too large, it is recommended that you join a smaller pool. While a pool can't access your funds,
-they CAN choose to vote against your wishes. Doing so would have them blacklisted pretty quickly, but
-keeping individual pool sizes low means that any rogue operators would have a hard time having an affect on 
-the outcome of any vote. By spreading tickets around pools, it makes the network even more decentralized.
+Zu einer Übersicht der offiziellen Stakepools gelangen Sie [hier](/mining/proof-of-stake#sign-up-for-a-stake-pool).
+Alle Stakepools laufen auf der selben Codebasis, können sich jedoch in Serverstruktur und Redundanz unterscheiden.
+Mehr Redundanz resultiert in geringerer Chance Ihre Votes zu verpassen. Auch Stakepools verpassen Votes, allerdings sind viele verpasste Votes
+mit dem Verhalten der PoW Miner begründet (manchmal finden PoW Miner neue Blöcke so schnell das die Zeiten für das Übermitteln der Votes durch die Stakepools nicht ausreicht).
+Um sicherzustellen das ein Pool nicht zu groß wird empfehlen wir Ihnen einen kleineren Stakepool zu wählen. Ein Pool hat zwar keinen Zugriff auf Ihr Geld,
+kann jedoch gegen Ihren Willen das Stimmrecht Ihrer Votes missbrauchen. Dies würde zwar relativ schnell auffallen und dazu führen das dieser Pool
+gebrandmarkt wird und auf die schwarzen Liste kommt, allerdings würde eine faire Verteilung der Stimmrechte über die verschiedenen Pools sicherstellen das kein Pool eine Wahl signifikant beeinflussen könnte. Tickets gleichmässig über die Pools zu verteilen dient gleichzeitig der Dezentralisierung des Netzwerks.
 
 ![Creating voting account](/img/Paymetheus-create-voting-account.png)  
 
-There's a fair bit of information here, so we'll go through each of the options.
+Beim Kauf von Tickets gibt es einige Einstellungen zu berücksichtigen die wir Ihnen nachfolgend näher bringen wollen.
 
-* **Ticket difficulty** - The current price of a ticket.
-* **Blocks until retarget** - When this reaches 0, a new ticket price is calculated.
-* **Source account** - This is the account that will purchase the tickets and receive the reward.
-* **Tickets to purchase** - The number of tickets to purchase.
-* **Ticket fee (DCR/kB)** - Tickets are entered into the voting pool by order of their fee. In times of demand,
-                        you will need to increase this value in order to have your tickets accepted.
-						You can view current ticket fees [here](https://www.dcrstats.com).
-* **Split fee (DCR/kB)** - Paymetheus uses a “split” transaction to avoid blocking your balance, spliting the
-                       exact amount needed for the ticket from the balance in your wallet. The “split” transaction
-                       needs to be confirmed at least once before you can reuse your balance. This can block your 
-                       whole balance for several minutes while this confirmation occurs. Without the split, you
-                       would have to wait for the confirmation of the ticket transaction, which could take several hours.
-                       This can be left at 0.01. It does not affect your chances of buying tickets or voting with them.
-* **Expiry (blocks)** - Often ticket fees will increase during a window and you may be stopped out by higher fees. By setting an
-					expiry, tickets that are not mined in the given number of blocks are cancelled so you can try again
-					with higher fees if you wish. If this is empty, they will not expire until the end of the window.
-* **Stake pool preference** - Automate setup with PoS pools. See below for more information.
-* **Voting address** - The Decred address that will do the voting. Solo and custom pool miners only.
-* **Pool fee address** - For those using a custom pool.
-* **Pool fees (%)** - For those using a custom pool.
+* **Ticket difficulty** - Der derzeitige Preis für ein Ticket.
+* **Blocks until retarget** - Wenn diese 0 erreicht wird ein neuer Ticketpreis errechnet.
+* **Source account** - Dieser Account wird das Ticket kaufen und die Belohnung für den Vote erhalten.
+* **Tickets to purchase** - Die Anzahl der zu kaufenden Tickets.
+* **Ticket fee (DCR/kB)** - Ticketkäufe werden von den PoW Minern in die neuen Blöcke geschrieben. Die Reihenfolge wird hier durch die 'Ticket fee' bestimmt.
+                        Wenn viele Ticketkäufe vorhanden sind müssen Sie diese Gebühr für die PoW Miner erhöhen um ihnen einen Anreiz zu geben Ihr Ticketkauf in einen Block aufzunehmen.
+						Sie können die derzeitigen Ticket Fees [hier](https://www.dcrstats.com) einsehen.
+* **Split fee (DCR/kB)** - Paymetheus nutzt eine “split” Transaktion um eine Blockierung Ihres Guthabens zu verhindern.
+                        Hierzu generiert Paymetheus eine Transaktion mit exaktem Ticketpreis und belastet somit nicht weiteres Geld in Ihrem Wallet. 
+                        Diese “split” Transaktion benötigt mindestens eine Bestätigung bevor Sie Ihr Guthaben wieder verwenden können. Dies kann dazu führen, 
+                        dass Ihr gesamtes Guthaben für mehrere Minuten blockiert ist bis diese Bestätigung vom Netzwerk eintrifft. Ohne diese “split” Transaktion
+                        müssten Sie bis zur Bestätigung des erfolgreichen Ticketkaufs warten, was möglicherweise mehrere Stunden in Anspruch nehmen kann.
+                        Diesen Wert können Sie stetig auf 0.01 belassen, es hat keinen Einfluss darauf ob Ihr Ticketkauf erfolgreich ist oder wie schnell das Ticket zum Vote aufgefordert wird.
+* **Expiry (blocks)** - Während eines Preisfensters können die Ticket Fees sehr stark schwanken und es könnte sein das Sie die Ticket Fees Ihrer Ticketkäufe 
+                        nachjustieren möchten. Durch das setzen des 'Expiry' werden nicht erfolgreiche Ticketkäufe nach der angegebenen Anzahl Blöcke abgebrochen so dass Sie einen weiteren Versuch mit höheren Ticket Fees starten können. Wenn Sie keine Anzahl angeben bleibt Ihr Ticketkauf bestehen bis zum Ende des Preisfensters.
+* **Stake pool preference** - Automatisches Einrichten und Verbinden mit einen Stakepool. Weitere Informationen hierzu weiter unten.
+* **Voting address** - Die Decred Adresse die das Voting übernimmt. Lediglich sinnvoll für Solo Miner und eigenen PoS Miner mit eigenen Pool.
+* **Pool fee address** - Für PoS Miner mit eigenen Pool.
+* **Pool fees (%)** - Für PoS Miner mit eigenen Pool.
 
 ![Purchasing tickets](/img/Paymetheus-ticket-purchasing.png)  
 
-To easily set up ticket purchasing for a stake pool, click the 'Manage pools button'. If you haven't already,
-you'll need to register with a stake pool (see above). Once you've registered, log in, look for your API key, and copy it.
-Select the pool you just registered with from the drop down. Paste the key into the 'API key' box and click 'Save'.
-You should see a bunch of letters and numbers appear in the bottom box. Click 'Close'. You can now purchase
-tickets by clicking the 'Purchase' button!
+Um das Einbinden eines Stakepools zu konfigurieren klicken Sie auf den 'Manage pools button'. Wenn nicht bereits
+geschehen registrieren Sie sich bei einen Stakepool (siehe oben). Sobald Sie sich registriert haben loggen Sie sich ein,
+schauen Sie auf der Pool Webseite in den Unterpunkt "Settings" und kopieren Sie sich Ihren Api Token. Nun wählen Sie in Paymetheus
+den Pool in dem Sie sich registriert haben aus dem Drop Down Menü aus. Fügen Sie Ihren Api Token in das Eingabefeld 'API key' ein und klicken
+Sie anschließend auf 'Save'. Anschließend sehen Sie im zweiten Eingabefeld automatisch eine Buchstaben und Zahlenkombination erscheinen.
+Klicken Sie nun auf 'Close'. Nun können Sie Tickets kaufen indem Sie auf den 'Purchase' Button drücken, vergessen Sie im oberen Dropdown nicht
+Ihren Pool beim Kauf eines Tickets auszuwählen um das Stimmrecht der zu kaufenden Tickets an den Pool zu übergeben.
 
 ![Manage stake pools](/img/Paymetheus-manage-stake-pool.png)
 			
-NOTE: While you can purchase tickets using Paymetheus, it cannot vote for you so you must either use a pool
-or run your own voting wallet which needs to be online 24/7. If you would prefer to solo mine,
-check the [dcrd Setup Guide](/getting-started/user-guides/dcrd-setup.md), [dcrwallet Setup Guide](/getting-started/user-guides/dcrd-setup.md) and [PoS Mining Guide](/mining/proof-of-stake.ms) for more information.
+HINWEIS: Sie können mit Paymetheus Tickets kaufen, Sie können allerdings nicht Voten. Sie müssen entweder einen Stakepool verwenden oder ein eigenens
+Wallet zum Voten betreiben welches 24/7 online ist. Wenn Sie es bevorzugen Solo PoS Voting zu betreiben lesen Sie bitte das [dcrd Setup Guide](/getting-started/user-guides/dcrd-setup.md), [dcrwallet Setup Guide](/getting-started/user-guides/dcrd-setup.md) und [PoS Mining Guide](/mining/proof-of-stake.ms) um weitere Informationen zu erhalten.
 
 ---
 
 ## **Request Payment** ##
-This is where you can generate wallet addresses to give to other people so they can
-send you DCR. Simply choose the account you want funds to go to and press Generate Address.
-Copy the address (it's the top line that starts with Ds) and share that with the other person.
-Decred addresses can be used as many times as you want, but for privacy reasons it's best
-to generate a new one for each transaction. There's around 1.4E48 (that's 14 followed by 47 zeroes)
-addresses available so you don't need to worry about running out.  
+In diesen Bereich können Sie neue Empfangsadressen generieren um diese anderen Personen
+mitzuteilen damit diese Ihnen DCR transferieren können. Wählen Sie einfach im oberen Pulldown Menü
+den Account aus für den eine neue Adresse erstellt werden soll und klicken Sie anschließend auf 'Generate Address'.
+Kopieren Sie sich die Empfangsadresse (fängt mit den Buchstaben Ds an) und teilen Sie diese der anderen Person mit.
+
+Decred Adressen können Sie so oft Sie wollen wiederverwenden, allerdings wird aus Gründen der Privatsphäre empfohlen
+für jede Transaktion eine neue Adresse zu generieren. Es gibt insgesamt 1.4E48 (das ist eine 14 gefolgt von 47 Nullen)
+mögliche Adressen die Sie mit Ihren Wallet generieren können, somit ist sichergestellt das Ihnen Ihre Adressen so schnell nicht ausgehen werden.
 
 ![Request Payment](/img/Paymetheus-receive.png)  
 
@@ -130,8 +130,8 @@ addresses available so you don't need to worry about running out.
 
 
 ## **Transaction History** ##
-This tab shows a list of all transactions that occured. The transaction hash can be used with the
-[block explorer](/getting-started/using-the-block-explorer.md) to see more information about the transaction.  
+Dieser Bereich zeigt Ihnen alle stattgefundenen Transaktionen an. Der Transaktionshash kann mit dem 
+[block explorer](/getting-started/using-the-block-explorer.md) eingesehen werden um weitere Informationen über die Transaktion zu erhalten.
 
 ![Transaction History](/img/Paymetheus-transactions.png)  
 
@@ -139,17 +139,17 @@ This tab shows a list of all transactions that occured. The transaction hash can
 
 
 ## **Stake Mining** ##
-This tab shows some statistics on the PoS network:  
+Dieser Bereich zeigt Ihnen Statistiken zum PoS Netzwerk an:
 
-Item                         | Description
+Eintrag                        | Beschreibung
 :-----------------------------:|:------------------------------------------------------------:
-Number of live tickets       | The total number of tickets that are eligible for voting across the network
-Number of tickets in mempool | The total number of tickets waiting to enter the voting pool
-Ticket difficulty            | The cost of a ticket (refunded on ticket vote/expiry)
-Owned tickets in mempool     | The number of your tickets in the mempool
-Owned live tickets           | The number of your tickets that are eligible for voting
-Owned immature tickets       | Number of tickets waiting to mature before going live (256 blocks, ~17 hours)
-Tickets missed               | Tickets that missed a vote either because the voting wallet or stake pool was offline or the PoW miner didn't mine it properly
-Tickets revoked              | Tickets that missed a vote and have had the ticket price refunded (minus the ticket fee), should be the same as tickets missed
-Tickets voted                | Lifetime tickets voted by this wallet
-Total subsidy earned         | Lifetime DCR subsidy earned by this wallet
+Number of live tickets       | Anzahl der Tickets die aktuell im Netzwerk zum Voten bereit stehen
+Number of tickets in mempool | Anzahl der Ticketkäufe die darauf warten in den Ticketpool aufgenommen zu werden
+Ticket difficulty            | Der aktuelle Ticketpreis (wird Ihnen bei einem vote/expiry zurückerstattet)
+Owned tickets in mempool     | Anzahl der Tickets im mempool
+Owned live tickets           | Anzahl Ihrer Tickets die zum Voten bereit stehen
+Owned immature tickets       | Anzahl Ihrer Tickets die erfolgreich gekauft wurden und in Kürze 'Live' werden und zum Voting bereit stehen (256 blocks, ~17 hours)
+Tickets missed               | Anzahl Ihrer Tickets die ihre Chance zum Voting verpasst haben, entweder weil das Votingwallet oder der Stakepool offline waren oder der PoW Miner diesen Vote nicht richtig angenommen hat
+Tickets revoked              | Tickets die ihre Chance zum Voting verpasst haben und deren Ticketpreis Sie bereits rückerstattet bekommen haben (abzüglich der Ticket Fee), sollte im Regelfall der Anzahl der 'Tickets missed' entsprechen
+Tickets voted                | Alle Tickets die während der Lebenszeit Ihres Wallets erfolgreich gevotet haben
+Total subsidy earned         | Die DCR die Sie während der Lebenszeit Ihres Wallets bereits durch das Voting verdient haben
