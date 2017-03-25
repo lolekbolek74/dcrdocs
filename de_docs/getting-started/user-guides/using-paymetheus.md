@@ -42,7 +42,7 @@ an mehrere Empfängeraddressen in einer Transaktion zu transferieren.
 ---
 
 
-## ** Purchase Tickets tab** ##
+## ** Purchase Tickets ** ##
 
 Paymetheus ermöglicht Ihnen den Kauf von Tickets zur Teilnahme am Proof of Stake mining indem Sie die Funktion des manuellen Ticketkaufs nutzen.
 Es muss an dieser Stelle erwähnt werden das Sie mit Paymatheus lediglich Tickets kaufen können, aber das eigentliche Voting kann Paymetheus nicht übernehmen.
@@ -58,8 +58,8 @@ Lediglich eines der beiden Wallets muss online sein um auf diese Adresse zuzugre
 der Pool für Sie das Voting übernehmen kann und Sie wiederrum das Voting mit Ihren eigenen Wallet übernehmen können
 falls der Pool nicht mehr online sein sollte.
 
-Der Pool hat dadurch KEINEN ZUGRIFF auf Ihr Geld. Sie weisen dem Pool lediglich das Recht zu an Ihrer Stelle das Voting durchzuführen. Dabei
-erlangt der Pool hat zu keinen Zeitpunkt Zugriff auf Ihr Geld.
+Der Pool hat dadurch KEINEN ZUGRIFF auf Ihre DCR. Sie weisen dem Pool lediglich das Recht zu an Ihrer Stelle das Voting durchzuführen. Dabei
+erlangt der Pool hat zu keinen Zeitpunkt Zugriff auf Ihre DCR.
 
 Es wird empfohlen einen neuen Account für das Votingrecht des Stakepools zu erstellen. Im Falle eines Totalausfalls des Stakepools können Sie
 so bedenkenlos das Votingrecht und den dazu benötigten privaten Schlüssel für diesen Account an einen anderen Stakepool weitergeben, solange
@@ -69,7 +69,7 @@ Zu einer Übersicht der offiziellen Stakepools gelangen Sie [hier](/mining/proof
 Alle Stakepools laufen auf der selben Codebasis, können sich jedoch in Serverstruktur und Redundanz unterscheiden.
 Mehr Redundanz resultiert in geringerer Chance Ihre Votes zu verpassen. Auch Stakepools verpassen Votes, allerdings sind viele verpasste Votes
 mit dem Verhalten der PoW Miner begründet (manchmal finden PoW Miner neue Blöcke so schnell das die Zeiten für das Übermitteln der Votes durch die Stakepools nicht ausreicht).
-Um sicherzustellen das ein Pool nicht zu groß wird empfehlen wir Ihnen einen kleineren Stakepool zu wählen. Ein Pool hat zwar keinen Zugriff auf Ihr Geld,
+Um sicherzustellen das ein Pool nicht zu groß wird empfehlen wir Ihnen einen kleineren Stakepool zu wählen. Ein Pool hat zwar keinen Zugriff auf Ihre DCR,
 kann jedoch gegen Ihren Willen das Stimmrecht Ihrer Votes missbrauchen. Dies würde zwar relativ schnell auffallen und dazu führen das dieser Pool
 gebrandmarkt wird und auf die schwarzen Liste kommt, allerdings würde eine faire Verteilung der Stimmrechte über die verschiedenen Pools sicherstellen das kein Pool eine Wahl signifikant beeinflussen könnte. Tickets gleichmässig über die Pools zu verteilen dient gleichzeitig der Dezentralisierung des Netzwerks.
 
@@ -85,7 +85,7 @@ Beim Kauf von Tickets gibt es einige Einstellungen zu berücksichtigen die wir I
                         Wenn viele Ticketkäufe vorhanden sind müssen Sie diese Gebühr für die PoW Miner erhöhen um ihnen einen Anreiz zu geben Ihr Ticketkauf in einen Block aufzunehmen.
 						Sie können die derzeitigen Ticket Fees [hier](https://www.dcrstats.com) einsehen.
 * **Split fee (DCR/kB)** - Paymetheus nutzt eine “split” Transaktion um eine Blockierung Ihres Guthabens zu verhindern.
-                        Hierzu generiert Paymetheus eine Transaktion mit exaktem Ticketpreis und belastet somit nicht weiteres Geld in Ihrem Wallet. 
+                        Hierzu generiert Paymetheus eine Transaktion mit exaktem Ticketpreis und belastet somit nicht weitere DCR in Ihrem Wallet. 
                         Diese “split” Transaktion benötigt mindestens eine Bestätigung bevor Sie Ihr Guthaben wieder verwenden können. Dies kann dazu führen, 
                         dass Ihr gesamtes Guthaben für mehrere Minuten blockiert ist bis diese Bestätigung vom Netzwerk eintrifft. Ohne diese “split” Transaktion
                         müssten Sie bis zur Bestätigung des erfolgreichen Ticketkaufs warten, was möglicherweise mehrere Stunden in Anspruch nehmen kann.

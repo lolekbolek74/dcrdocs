@@ -41,12 +41,12 @@ Ihrem Wallet.
 <i class="fa fa-exclamation-triangle"></i> **OHNE DIESEN SEED ODER DEN DAZUGEHÖRIGEN HEX-CODE VERLIEREN SIE UNWIEDERBRINGLICH DEN ZUGRIFF AUF IHR WALLET!**  
 
 **GEBEN SIE DEN SEED NIEMALS JEMAND ANDEREN, NICHT EINMAL DEN DECRED ENTWICKLERN!** Mit diesen Worten kann jemand Ihr Wallet auf einen anderen Computer 
-wiederherstellen und Ihre Geld transferieren oder stehlen. Bei Decred lassen sich keine Transaktionen rückgängig machen, sobald jemand Ihre Decreds stiehlt 
-haben Sie keine Möglichkeit dieses Geld zurückzuholen.
+wiederherstellen und Ihre DCR transferieren oder stehlen. Bei Decred lassen sich keine Transaktionen rückgängig machen, sobald jemand Ihre Decreds stiehlt 
+haben Sie keine Möglichkeit diese DCR zurückzuholen.
 
-Decred und andere digitale Währungen werden oft mit einen Bankkonto verglichen. Dies ist nur teilweise wahr, denn ihr Decred Wallet ist auch vergleichbar mit
+Decred und andere digitale Währungen werden oft mit einen Bankkonto verglichen. Dies ist nur teilweise wahr, denn Ihr Decred Wallet ist auch vergleichbar mit
 Ihrer Geldbörse. Verlieren Sie Ihre Geldbörse verlieren Sie auch den Zugriff auf das, was sich darin befunden hat und niemand, auch nicht die Decred Entwickler
-kann diesen Verlust rückgängig machen. Also ist es sehr wichtig, das Sie sich die Zeit nehmen und diese Seite sehr ausführlich lesen und das Sie Ihren Seed
+können diesen Verlust rückgängig machen. Also ist es sehr wichtig, das Sie sich die Zeit nehmen und diese Seite sehr ausführlich lesen und das Sie Ihren Seed
 AUFSCHREIBEN und diese Notiz anschließend an einen sicheren Ort aufbewahren. Es bietet sich an den Seed auf ein Blatt Papier zu notieren und an einen geheimen 
 Ort aufzubewahren und zusätzlich eine Kopie dieses Seeds VERSCHLÜSSELT auf dem Rechner zu speichern. Clouddienste wie Dropbox oder OneDrive sind nette Dienste
 zum Speichern Ihrer Daten, seien Sie sich aber darüber bewusst, das andere Menschen auf diese Daten Zugriff haben. Daher verschlüsseln Sie bitte diese Daten,
