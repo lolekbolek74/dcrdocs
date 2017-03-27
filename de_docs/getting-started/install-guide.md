@@ -4,22 +4,22 @@ Diese Anleitung wurde zuletzt zur v0.8.2 überarbeitet
 
 ---
 
-Es gibt vier verschiedene Möglichkeiten die Decred Software herunterzuladen und zu installieren. Die erste Variante wäre der Download von dcrinstall (plattformübergreifend), eine weitere Möglichkeit ist der Windows Installer (Nur für Windows und zur Zeit die einzige Möglichkeit Paymetheus v0.8.2 zu installieren), eine weitere Möglichkeit ist der Download der vorkompilierten Binärdateien (plattformübergreifend) und zu guter letzt die Software im Quelltext herunterzuladen und selbst zu kompilieren (plattformübergreifend). Die ersten drei Methoden werden nachfolgend beschrieben, eine Anleitung zur Kompilierung folgt zu einem späteren Zeitpunkt.
+Es gibt vier verschiedene Möglichkeiten die Decred Software herunterzuladen und zu installieren. Die erste Variante wäre der Download von dcrinstall (plattformübergreifend), eine weitere Möglichkeit ist der Windows Installer (Nur für Windows und zur Zeit die einzige Möglichkeit Paymetheus v0.8.2 zu installieren). Eine weitere Möglichkeit ist der Download der vorkompilierten Binärdateien (plattformübergreifend) und zu guter letzt die Software im Quelltext herunterzuladen und selbst zu kompilieren (plattformübergreifend). Die ersten drei Methoden werden nachfolgend beschrieben, eine Anleitung zur Kompilierung folgt zu einem späteren Zeitpunkt.
 
 ---
 
 ## **Paymetheus** 
 
-Die Installationssoftware für Windows (`.msi` Datei) kann hier heruntergeladen werden: [https://github.com/decred/decred-binaries/releases](https://github.com/decred/decred-binaries/releases). Paymetheus wird auf deinem Computer im Programme Ordner installiert. Die Installation ist unkompliziert, nachfolgend eine kurze Anleitung:
+Die Installationssoftware für Windows (`.msi` Datei) kann hier heruntergeladen werden: [https://github.com/decred/decred-binaries/releases](https://github.com/decred/decred-binaries/releases). Paymetheus wird auf deinem Computer unter Programme installiert. Die Installation ist unkompliziert, nachfolgend eine kurze Anleitung:
 
 1. Lade die für dein Betriebssystem korrekte Datei herunter:
 
     Für 32-bit Computer, lade `decred_0.8.2-beta_x86.msi` herunter. <br />
     Für 64-bit Computer, lade `decred_0.8.2-beta_x64.msi` herunter.
 
-2. Navigiere in das Verzeichnis deines Downloads und starte die `.msi` Datei mit einen Doppelklick.
+2. Navigiere in das Verzeichnis deines Downloads und starte die `.msi` Datei mit einem Doppelklick.
 
-3. Der Installationsassistent wird dich durch den Installationsprozess führen. Während der Installation wirst du aufgefordert die Nutzungs- und Lizenzbedingungen zu akzeptieren.
+3. Der Installationsassistent wird Dich durch den Installationsprozess führen. Während der Installation wirst du aufgefordert die Nutzungs- und Lizenzbedingungen zu akzeptieren.
 
 4. Nach der Installation sollte die Software im `..\Program Files\Decred\` Verzeichniss installiert sein. Es wird eine Verknüpfung im Startmenü hinterlegt (schaue nach der `Decred` Verknüpfung in deiner Programmliste)
 
@@ -27,7 +27,7 @@ Die Installationssoftware für Windows (`.msi` Datei) kann hier heruntergeladen 
 
 ## **dcrinstall**
 
-`dcrinstall` steht zur automatischen Installation und zum Update der Decred Software bereit. Die aktuellste Version kann hier heruntergeladen werden: [https://github.com/decred/decred-release/releases](https://github.com/decred/decred-release/releases). Binärdateien werden für Windows, OSX/macOS, Linux, OpenBSD und FreeBSD angeboten. Wenn die Installation durchgeführt wird werden `dcrd`, `dcrwallet`, und `dcrctl` auf dem Zielsystem installiert. Anleitungen für die Installation auf dem Mac, Linux und Windows werden nachfolgend beschrieben (Wir gehen davon au dass *BSD Nutzer selbstständig klar kommen).
+`dcrinstall` steht zur automatischen Installation und zum Update der Decred Software bereit. Die aktuellste Version kann hier heruntergeladen werden: [https://github.com/decred/decred-release/releases](https://github.com/decred/decred-release/releases). Binärdateien werden für Windows, OSX/macOS, Linux, OpenBSD und FreeBSD angeboten. Wenn die Installation durchgeführt wird werden `dcrd`, `dcrwallet`, und `dcrctl` auf dem Zielsystem installiert. Anleitungen für die Installation auf dem Mac, Linux und Windows werden nachfolgend beschrieben (Wir gehen davon aus, dass *BSD Nutzer selbstständig klar kommen).
 
 > OSX/macOS:
 
@@ -38,7 +38,7 @@ Die Installationssoftware für Windows (`.msi` Datei) kann hier heruntergeladen 
 
 2. Mache dcrinstall-darwin-xxxx-vx.x.x ausführbar über die Befehlszeile:
 
-    Wechsel in das Verzeichnis in dem sich die dcrinstall Datei befindet indem du mit dem `cd` Kommando dorthin wechselst, führe chmod mit den Parametern u+x aus um die dcrinstall Datei ausführbar zu machen und starte die ausführbare Datei anschließend. Nachfolgend ein Beispiel für die Kommandos (passe die Verzeichnis- und Dateinamen entsprechend an):
+    Wechsel mit dem `cd` Kommando in das Verzeichnis, in dem sich die dcrinstall Datei befindet, führe `chmod` mit den Parametern `u+x` aus, um die dcrinstall Datei ausführbar zu machen und starte die ausführbare Datei anschließend. Nachfolgend ein Beispiel für die Kommandos (passe die Verzeichnis- und Dateinamen entsprechend an):
     
     `cd ~/Downloads/` <br />
     `chmod u+x dcrinstall-darwin-amd64-v0.8.2` <br />
@@ -57,7 +57,7 @@ Die Installationssoftware für Windows (`.msi` Datei) kann hier heruntergeladen 
 
 2. Mache dcrinstall-linux-xxxxx-vx.x.x ausführbar über die Befehlszeile:
 
-    Wechsel in das Verzeichnis in dem sich die dcrinstall Datei befindet indem du mit dem `cd` Kommando dorthin wechselst, führe chmod mit den Parametern u+x aus um die dcrinstall Datei ausführbar zu machen und starte die ausführbare Datei anschließend. Nachfolgend ein Beispiel für die Kommandos (passe die Verzeichnis- und Dateinamen entsprechend an):
+    Wechsel mit dem `cd` Kommando in das Verzeichnis, in dem sich die dcrinstall Datei befindet, führe `chmod` mit den Parametern `u+x` aus, um die dcrinstall Datei ausführbar zu machen und starte die ausführbare Datei anschließend. Nachfolgend ein Beispiel für die Kommandos (passe die Verzeichnis- und Dateinamen entsprechend an):
     
     `cd ~/Downloads/` <br />
     `chmod u+x dcrinstall-linux-amd64-v0.8.2` <br />
@@ -74,7 +74,7 @@ Die Installationssoftware für Windows (`.msi` Datei) kann hier heruntergeladen 
 
 2.  Starte die ausführbare dcrinstall Datei.
 
-    Du kannst die Datei entweder per Doppelklick starten oder über die Eingabeaufforderung starten. 
+    Du kannst die Datei entweder per Doppelklick oder über die Eingabeaufforderung starten. 
     
 3. Die Binärdateien für `dcrd`, `dcrwallet`, und `dcrctl` können nach der Installation im Verzeichnis `%HOMEPATH%\decred\` gefunden werden (in der Regel ist %HOMEPATH% das Verzeichnis `C:\Users\username`).
 
@@ -96,7 +96,7 @@ Die neuesten vorkompilierten Binärdateien können hier gefunden werden: [https:
     Finder: einfach ein Doppelklick auf die .tar.gz Datei. <br />
     Terminal: benutze folgendes Kommando `tar -xvzf filename.tar.gz`.
 
-    **HINWEIS**: Falls du Safari unter macOS Sierra benutzt und die 'Open "safe" files after downloading' Einstellung aktiviert hast werden .gz und .zip Dateien automatisch entpackt nachdem der Download abgeschlossen ist. Das Kommando `tar -xvzf filename.tar.gz` resultiert in nachfolgender Fehlerausgabe: `tar: Error opening archive: Failed to open 'filename.tar.gz'`. Benutze stattdessen das Kommando `tar -xvzf filename.tar` (entferne das .gz vom vorherigen Kommando).
+    **HINWEIS**: Falls Du Safari unter macOS Sierra benutzt und die 'Open "safe" files after downloading' Einstellung aktiviert hast werden .gz und .zip Dateien automatisch entpackt nachdem der Download abgeschlossen ist. Das Kommando `tar -xvzf filename.tar.gz` resultiert in nachfolgender Fehlerausgabe: `tar: Error opening archive: Failed to open 'filename.tar.gz'`. Benutze stattdessen das Kommando `tar -xvzf filename.tar` (entferne das .gz vom vorherigen Kommando).
     
     Nachdem das Archiv erfolgreich entpackt wurde sollten nun Verzeichnisse mit selbigen Namen vorliegen. (`z.B. tar -xvzf decred-darwin-amd64-v0.8.2.tar.gz` sollte in das Verzeichnis `decred-darwin-amd64-v0.8.2` entpackt werden). Folgende Binärdateien sollten nun in dem Verzeichnis liegen `dcrctl`, `dcrd`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, und `sample-dcrwallet.conf`.
 
